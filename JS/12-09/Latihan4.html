@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validasi Masukkan</title>
+</head>
+<body>
+    <script>
+        function cekNama(form) {
+            if (form.nama.value == "") {
+                alert("Nama harus dimasukkan");
+                form.nama.focus();
+                form.nama.select();
+                return(false);
+            }
+            alert("Terima Kasih," + form.nama. value);
+            return(true);
+        }
+    </script>
+
+    <form name="formku">
+    <pre>
+        Nama : <input tyoe = "TEXT"
+        NAME = "nama"><BR>
+            <input type="button" value="Kirim" onclick="cekNama(this.form)"><br>
+    </pre>
+    </form>
+    </body>
+</html>
