@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh If Bersarang</title>
+  </head>
+  <body>
+    <script>
+      var tanggal = new Date();
+      var kode_hari = tanggal.getDay();
+      var nama_hari = "";
+
+      if (kode_hari == 0) nama_hari = "Minggu";
+      else if (kode_hari == 1) nama_hari = "Senin";
+      else if (kode_hari == 2) nama_hari = "Selasa";
+      else if (kode_hari == 3) nama_hari = "Rabu";
+      else if (kode_hari == 4) nama_hari = " Kamis";
+      else if (kode_hari == 5) nama_hari = "Jumat";
+      else nama_hari = "Sabtu";
+      document.write("Hari ini hari " + nama_hari);
+      document.write(
+        ", tanggal " +
+          tanggal.getDate() +
+          "/" +
+          (tanggal.getMonth() + 1) +
+          "/" +
+          tanggal.getFullYear()
+      );
+    </script>
+  </body>
+</html>
